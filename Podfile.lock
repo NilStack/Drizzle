@@ -1,0 +1,53 @@
+PODS:
+  - p2.OAuth2 (4.0.1)
+  - Realm (3.11.1):
+    - Realm/Headers (= 3.11.1)
+  - Realm/Headers (3.11.1)
+  - RealmSwift (3.11.1):
+    - Realm (= 3.11.1)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - p2.OAuth2 (from `https://github.com/p2/OAuth2`)
+  - RealmSwift
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Realm
+    - RealmSwift
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  p2.OAuth2:
+    :git: https://github.com/p2/OAuth2
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  p2.OAuth2:
+    :commit: e81b4bc4a3cfc3d11b62aba07241ceeb0684ac07
+    :git: https://github.com/p2/OAuth2
+    :submodules: true
+
+SPEC CHECKSUMS:
+  p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
+  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
+  RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: e144b74572b3a502d6d5bcdd66ceb5d1e4e3af52
+
+COCOAPODS: 1.5.3
