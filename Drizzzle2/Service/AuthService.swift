@@ -10,11 +10,14 @@ import UIKit
 import p2_OAuth2
 import RealmSwift
 
+///
 protocol AuthServiceDelegate: class{
+    //func authService(_ service: AuthService, didLoggedIn accessToken: AccessToken)
     func authService(_ service: AuthService, didLoggedIn accessToken: AccessToken, completionHandler: @escaping (AccessToken)-> Void)
     func authService(_ service: AuthService, didCompleteWithError error: Error?)
 }
 
+///
 class AuthService: Service {
     
     weak var delegate: AuthServiceDelegate?

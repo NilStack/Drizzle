@@ -11,17 +11,20 @@ import RealmSwift
 
 protocol AuthViewModelType {
     func login()
+    func isLoggedIn() -> Bool
 }
 
 class AuthViewModel: AuthViewModelType {
     
     let realm = try! Realm()
-    let authService: AuthService
+    let authService: AuthService = AuthService()
 
-    init(with service: AuthService) {
-        self.authService = service
+    /*
+    init() {
+        self.authService = AuthService()
     }
-    
+    */
+
     func login() {
         if (isLoggedIn()) {
             return
@@ -37,9 +40,14 @@ class AuthViewModel: AuthViewModelType {
 }
 
 extension AuthViewModel: AuthServiceDelegate {
-    func didLoggedIn(with accessToken: AccessToken) {
+    func authService(_ service: AuthService, didLoggedIn accessToken: AccessToken, completionHandler: @escaping (AccessToken) -> Void) {
         try! realm.write() {
             realm.add(accessToken, update: true)
         }
     }
+    
+    func authService(_ service: AuthService, didCompleteWithError error: Error?) {
+        print(error.debugDescription)
+    }
+    
 }

@@ -10,15 +10,10 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     let window: UIWindow?
-    let authService: AuthService
-    let loginCoordinator: LoginCoordinator
-    let tabBarCoordinator: TabBarCoordinator
+    
     
     init(window: UIWindow?) {
         self.window = window
-        authService = AuthService()
-        loginCoordinator = LoginCoordinator()
-        tabBarCoordinator = TabBarCoordinator()
     }
     
     func start() {
@@ -26,12 +21,22 @@ class AppCoordinator: Coordinator {
             return
         }
         
-        if (authService.isLoggedIn()) {
+        if (isLoggedIn()) {
+            let tabBarCoordinator = TabBarCoordinator()
             tabBarCoordinator.start()
         } else {
+            let navigationController = UINavigationController()
+            window.rootViewController = navigationController
+            window.makeKeyAndVisible()
+            
+            let loginCoordinator = LoginCoordinator(with: navigationController)
             loginCoordinator.start()
         }
         
+    }
+    
+    func isLoggedIn() -> Bool {
+        return false
     }
     
 }

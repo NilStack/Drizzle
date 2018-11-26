@@ -9,12 +9,21 @@
 import UIKit
 
 class LoginCoordinator: Coordinator {
+    //let authService: AuthService
+    let authViewModel: AuthViewModelType
     
-    let authViewModel: AuthViewModel
+    let navigationController: UINavigationController
+    let loginViewController: LoginViewController
     
-    func start() {
+    init(with navigationController: UINavigationController) {
+        authViewModel = AuthViewModel()
+        loginViewController = LoginViewController(viewModel: authViewModel)
         
+        self.navigationController = navigationController
     }
     
+    func start() {
+        navigationController.pushViewController(loginViewController, animated: true)
+    }
 
 }
