@@ -9,7 +9,11 @@
 import UIKit
 
 class TabBarCoordinator: Coordinator {
+    
+    init(with tabBarController: UITabBarController) {
+    }
+
     func start() {
-        
+        print("tab bar start")
     }
 }

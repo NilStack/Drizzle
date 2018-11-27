@@ -11,20 +11,21 @@ import p2_OAuth2
 import RealmSwift
 
 ///
-protocol AuthServiceDelegate: class{
+protocol AuthenticationServiceDelegate: class{
     //func authService(_ service: AuthService, didLoggedIn accessToken: AccessToken)
-    func authService(_ service: AuthService, didLoggedIn accessToken: AccessToken, completionHandler: @escaping (AccessToken)-> Void)
-    func authService(_ service: AuthService, didCompleteWithError error: Error?)
+    typealias CompletionHandler = (AccessToken)-> Void
+    func authenticationService(_ service: AuthenticationService, didLoggedIn accessToken: AccessToken)
+    func authenticationService(_ service: AuthenticationService, didCompleteWithError error: Error?)
 }
 
 ///
-class AuthService: Service {
+class AuthenticationService: Service {
     
-    weak var delegate: AuthServiceDelegate?
+    weak var delegate: AuthenticationServiceDelegate?
     
     var oauth2 = OAuth2CodeGrant(settings: [
-        "client_id": "",
-        "client_secret": "",
+        "client_id": "403191816bb121987aa69aa078a628c8a96ed7d98bf7de2701f5e4b4391113eb",
+        "client_secret": "1c4b276f43663b3102b8ff46d84be97567f6337777681808ae33e385696267c8",
         "authorize_uri": "https://dribbble.com/oauth/authorize",
         "token_uri": "https://dribbble.com/oauth/token",
         "redirect_uris": ["drizzzle://oauth/callback"],
@@ -54,13 +55,19 @@ class AuthService: Service {
             return
         }
         
+        // WARNING: a tmp workaround to get authentication view controller as oauth2's context to present browser controller to show embeded authentication web page
+        
+        let rootNavigationController: UINavigationController = UIApplication.shared.delegate!.window!?.rootViewController! as! UINavigationController
+        let authenticationViewController = rootNavigationController.viewControllers.first!
+        
         oauth2.authConfig.authorizeEmbedded = true
-        oauth2.authConfig.authorizeContext = self
+        oauth2.authConfig.authorizeContext = authenticationViewController
+
         oauth2.logger = OAuth2DebugLogger(.trace)
         oauth2.authorize { (tokenDict, error) in
             
             if let error = error {
-                self.delegate?.authService(self, didCompleteWithError: error)
+                self.delegate?.authenticationService(self, didCompleteWithError: error)
                 return
             }
             
@@ -68,10 +75,11 @@ class AuthService: Service {
                 let accessToken = AccessToken()
                 accessToken.accessToken = dict["access_token"] as! String
                 accessToken.tokenType = dict["token_type"] as! String
-                accessToken.scope = dict["scope"] as! List<String> //(dict["scope"] as! String).components(separatedBy: " ")
+                let scopeArray = (dict["scope"] as! String).components(separatedBy: " ")
+                accessToken.scope.append(objectsIn: scopeArray)
                 //print("access token: \(dict["access_token"])")
                 
-                //self.delegate?.authService(self, didLoggedIn: accessToken, completionHandler: <#T##(AccessToken) -> Void#>)
+                self.delegate?.authenticationService(self, didLoggedIn: accessToken)
             }
             
         }

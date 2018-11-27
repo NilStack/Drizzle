@@ -14,6 +14,10 @@ struct Constants {
         static let DidAuthenticateNotification = "xyz.pengguo.Dirzzzle.notification.didAuthenticate"
     }
     
+    struct Autentication {
+        static let AutenticationStatusKey = "xyz.pengguo.Dirzzzle.Authentication.Status"
+    }
+    
     struct ProfileHeaderView {
         struct Layout {
             static let EdgeInset = 20.0
