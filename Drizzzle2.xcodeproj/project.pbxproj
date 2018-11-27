@@ -13,12 +13,12 @@
 		E030C94621AA957B00670F2B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94521AA957B00670F2B /* TabBarCoordinator.swift */; };
 		E030C94921AA9E9500670F2B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94821AA9E9500670F2B /* AuthenticationViewModel.swift */; };
 		E030C94B21AA9EAD00670F2B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94A21AA9EAD00670F2B /* ViewModel.swift */; };
+		E030C95121AD818E00670F2B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94F21AD818E00670F2B /* LoginButton.swift */; };
+		E030C95221AD818E00670F2B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C95021AD818E00670F2B /* AuthenticationViewController.swift */; };
 		E0C3494721A6E0E900FB0597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3494621A6E0E900FB0597 /* AppDelegate.swift */; };
 		E0C3494921A6E0E900FB0597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3494821A6E0E900FB0597 /* ViewController.swift */; };
 		E0C3494E21A6E0EA00FB0597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C3494D21A6E0EA00FB0597 /* Assets.xcassets */; };
 		E0C3495121A6E0EA00FB0597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C3494F21A6E0EA00FB0597 /* LaunchScreen.storyboard */; };
-		E0C3495B21A6E29800FB0597 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3495921A6E29800FB0597 /* LoginButton.swift */; };
-		E0C3495C21A6E29800FB0597 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3495A21A6E29800FB0597 /* AuthenticationViewController.swift */; };
 		E0C3496021A7A36000FB0597 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3495E21A7A36000FB0597 /* Constants.swift */; };
 		E0C3496121A7A36000FB0597 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3495F21A7A36000FB0597 /* Extension.swift */; };
 		E0C3496521A7A3C200FB0597 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3496421A7A3C200FB0597 /* AccessToken.swift */; };
@@ -36,14 +36,14 @@
 		E030C94521AA957B00670F2B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E030C94821AA9E9500670F2B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		E030C94A21AA9EAD00670F2B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E030C94F21AD818E00670F2B /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		E030C95021AD818E00670F2B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		E0C3494321A6E0E900FB0597 /* Drizzzle2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drizzzle2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C3494621A6E0E900FB0597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C3494821A6E0E900FB0597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0C3494D21A6E0EA00FB0597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C3495021A6E0EA00FB0597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C3495221A6E0EA00FB0597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0C3495921A6E29800FB0597 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		E0C3495A21A6E29800FB0597 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		E0C3495E21A7A36000FB0597 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E0C3495F21A7A36000FB0597 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E0C3496421A7A3C200FB0597 /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
@@ -90,6 +90,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E030C94E21AD818E00670F2B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E030C94F21AD818E00670F2B /* LoginButton.swift */,
+				E030C95021AD818E00670F2B /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		E0C3493A21A6E0E900FB0597 = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +120,11 @@
 		E0C3494521A6E0E900FB0597 /* Drizzzle2 */ = {
 			isa = PBXGroup;
 			children = (
+				E030C94E21AD818E00670F2B /* Authentication */,
 				E030C94721AA9E5200670F2B /* ViewModel */,
 				E030C94021AA8B4200670F2B /* Service */,
 				E0C3496621A7F4DF00FB0597 /* Coordinator */,
 				E0C3496321A7A3B700FB0597 /* Model */,
-				E0C3495821A6E29800FB0597 /* Authentication */,
 				E0C3495D21A7A36000FB0597 /* Utility */,
 				E0C3494621A6E0E900FB0597 /* AppDelegate.swift */,
 				E0C3494821A6E0E900FB0597 /* ViewController.swift */,
@@ -124,16 +133,6 @@
 				E0C3495221A6E0EA00FB0597 /* Info.plist */,
 			);
 			path = Drizzzle2;
-			sourceTree = "<group>";
-		};
-		E0C3495821A6E29800FB0597 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				E0C3495921A6E29800FB0597 /* LoginButton.swift */,
-				E0C3495A21A6E29800FB0597 /* AuthenticationViewController.swift */,
-			);
-			name = Authentication;
-			path = ../../Drizzzle/Drizzzle/Authentication;
 			sourceTree = "<group>";
 		};
 		E0C3495D21A7A36000FB0597 /* Utility */ = {
@@ -308,16 +307,16 @@
 				E0C3496521A7A3C200FB0597 /* AccessToken.swift in Sources */,
 				E0C3496021A7A36000FB0597 /* Constants.swift in Sources */,
 				E0C3496E21A8153F00FB0597 /* AuthenticationCoordinator.swift in Sources */,
-				E0C3495C21A6E29800FB0597 /* AuthenticationViewController.swift in Sources */,
 				E030C94421AA8C0100670F2B /* Service.swift in Sources */,
 				E030C94621AA957B00670F2B /* TabBarCoordinator.swift in Sources */,
 				E030C94221AA8BD600670F2B /* AuthService.swift in Sources */,
+				E030C95221AD818E00670F2B /* AuthenticationViewController.swift in Sources */,
 				E0C3494921A6E0E900FB0597 /* ViewController.swift in Sources */,
 				E0C3496121A7A36000FB0597 /* Extension.swift in Sources */,
+				E030C95121AD818E00670F2B /* LoginButton.swift in Sources */,
 				E030C94B21AA9EAD00670F2B /* ViewModel.swift in Sources */,
 				E030C94921AA9E9500670F2B /* AuthenticationViewModel.swift in Sources */,
 				E0C3496A21A7FCEA00FB0597 /* AppCoordinator.swift in Sources */,
-				E0C3495B21A6E29800FB0597 /* LoginButton.swift in Sources */,
 				E0C3494721A6E0E900FB0597 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
