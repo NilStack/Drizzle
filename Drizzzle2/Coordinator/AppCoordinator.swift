@@ -35,12 +35,9 @@ class AppCoordinator: Coordinator {
         guard let window = window else {
             return
         }
-        
-        // TODO: pop authentication controller
-        //authenticationCoordinator?.navigationController.popViewController(animated: true)
-        
+
         let tabbarController = UITabBarController()
-        window.rootViewController = tabbarController
+        window.switchRootViewController(to: tabbarController)
         window.makeKeyAndVisible()
         
         tabBarCoordinator = TabBarCoordinator(with: tabbarController)
