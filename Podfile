@@ -8,5 +8,7 @@ target 'Drizzzle2' do
   pod 'RealmSwift'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'Moya'
+  pod 'Moya-ObjectMapper'
 
 end

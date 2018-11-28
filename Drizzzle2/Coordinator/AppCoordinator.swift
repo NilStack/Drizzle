@@ -24,7 +24,7 @@ class AppCoordinator: Coordinator {
     }
 
     func start() {
-        if (isAuthenticated) {
+        if isAuthenticated {
             showContent()
         } else {
             showAuthentication()

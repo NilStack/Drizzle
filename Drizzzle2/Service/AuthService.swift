@@ -23,12 +23,14 @@ class AuthenticationService: Service {
     weak var delegate: AuthenticationServiceDelegate?
 
     var oauth2 = OAuth2CodeGrant(settings: [
-        "client_id": "403191816bb121987aa69aa078a628c8a96ed7d98bf7de2701f5e4b4391113eb",
-        "client_secret": "1c4b276f43663b3102b8ff46d84be97567f6337777681808ae33e385696267c8",
-        "authorize_uri": "https://dribbble.com/oauth/authorize",
-        "token_uri": "https://dribbble.com/oauth/token",
-        "redirect_uris": ["drizzzle://oauth/callback"],
-        "scope": "public write comment upload",
+        "client_id": "e4cf67a6f264d323e0c7",
+        "client_secret": "f328ee101ff0b2699951f4373151db6d5f0d2daa",
+        "authorize_uri": "https://github.com/login/oauth/authorize",
+        "token_uri": "https://github.com/login/oauth/access_token",
+        "scope": "user repo notifications",
+        "redirect_uris": ["gitgit://oauth/callback"],
+        "secret_in_body": true, // GitHub does not accept client secret in the Authorization header
+        "verbose": true,
         "keychain": false
         ] as OAuth2JSON)
 
@@ -64,7 +66,6 @@ class AuthenticationService: Service {
         }
         oauth2.logger = OAuth2DebugLogger(.trace)
         oauth2.authorize { (tokenDict, error) in
-
             if let error = error {
                 self.delegate?.authenticationService(self, didCompleteWithError: error)
                 return
@@ -77,7 +78,7 @@ class AuthenticationService: Service {
                 // swiftlint:disable:next force_cast
                 accessToken.tokenType = dict["token_type"] as! String
                 // swiftlint:disable:next force_cast
-                let scopeArray = (dict["scope"] as! String).components(separatedBy: " ")
+                let scopeArray = (dict["scope"] as! String).components(separatedBy: ",")
                 accessToken.scope.append(objectsIn: scopeArray)
                 //print("access token: \(dict["access_token"])")
                 self.delegate?.authenticationService(self, didLoggedIn: accessToken)

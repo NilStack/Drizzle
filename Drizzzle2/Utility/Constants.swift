@@ -17,7 +17,7 @@ struct Constants {
     struct Autentication {
         static let AutenticationStatusKey = "xyz.pengguo.Dirzzzle.Authentication.Status"
     }
-    
+
     struct ProfileHeaderView {
         struct Layout {
             static let EdgeInset = 20.0
@@ -40,8 +40,6 @@ struct Constants {
 
     struct ShotsViewController {
         struct ShotCardView {
-            //static let ShotImageWidth = 120.0
-            //static let ShotImageHeight = 90.0
             static let BottomBarWidth = 80.0
             static let BottomBarHeight = 30.0
         }

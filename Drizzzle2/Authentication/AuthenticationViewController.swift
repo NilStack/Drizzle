@@ -34,7 +34,7 @@ class AuthenticationViewController: UIViewController {
         button.layer.borderWidth = 1.0
         button.layer.borderColor = UIColor.black.cgColor
         button.layer.cornerRadius = 30.0
-        button.setTitle("Login with Dribbble", for: .normal)
+        button.setTitle("Login with GitHub", for: .normal)
         button.addTarget(self, action: #selector(login(sender:)), for: .touchUpInside)
         return button
     }()
