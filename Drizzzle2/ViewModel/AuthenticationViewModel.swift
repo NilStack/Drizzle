@@ -15,15 +15,15 @@ protocol AuthenticationViewModelType {
 
 protocol AuthenticationViewModelDelegate: class {
     func authenticationViewModel(_ viewModel: AuthenticationViewModel, didAuthenticate: Bool, error: Error?)
-    
+
     //func authenticationViewModel(_ viewModel: AuthenticationViewModel, didCompleteWithError error: Error?)
 }
 
 class AuthenticationViewModel: AuthenticationViewModelType {
-    
+    // swiftlint:disable:next force_try
     let realm = try! Realm()
+
     let authService: AuthenticationService
-    //var isLoggedIn: Bool
     weak var delegate: AuthenticationViewModelDelegate?
 
     init() {
@@ -33,9 +33,6 @@ class AuthenticationViewModel: AuthenticationViewModelType {
     }
 
     func login() {
-        //if (isLoggedIn) {
-        //    return
-        //}
         self.authService.login()
     }
 
@@ -43,17 +40,16 @@ class AuthenticationViewModel: AuthenticationViewModelType {
 
 extension AuthenticationViewModel: AuthenticationServiceDelegate {
     func authenticationService(_ service: AuthenticationService, didLoggedIn accessToken: AccessToken/*, completionHandler: @escaping (AccessToken) -> Void*/) {
+        // swiftlint:disable:next force_try
         try! realm.write() {
             realm.add(accessToken, update: true)
         }
-        //isLoggedIn = true
         self.delegate?.authenticationViewModel(self, didAuthenticate: true, error: nil)
     }
-    
+
     func authenticationService(_ service: AuthenticationService, didCompleteWithError error: Error?) {
         print(error.debugDescription)
         //isLoggedIn = false
         self.delegate?.authenticationViewModel(self, didAuthenticate: false, error: error)
     }
-    
 }

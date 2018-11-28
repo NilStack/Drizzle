@@ -13,8 +13,9 @@
 		E030C94621AA957B00670F2B /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94521AA957B00670F2B /* TabBarCoordinator.swift */; };
 		E030C94921AA9E9500670F2B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94821AA9E9500670F2B /* AuthenticationViewModel.swift */; };
 		E030C94B21AA9EAD00670F2B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94A21AA9EAD00670F2B /* ViewModel.swift */; };
-		E030C95121AD818E00670F2B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C94F21AD818E00670F2B /* LoginButton.swift */; };
 		E030C95221AD818E00670F2B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C95021AD818E00670F2B /* AuthenticationViewController.swift */; };
+		E030C95A21AD880D00670F2B /* Drizzzle2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C95921AD880D00670F2B /* Drizzzle2Tests.swift */; };
+		E030C96821AD882200670F2B /* Drizzzle2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030C96721AD882200670F2B /* Drizzzle2UITests.swift */; };
 		E0C3494721A6E0E900FB0597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3494621A6E0E900FB0597 /* AppDelegate.swift */; };
 		E0C3494921A6E0E900FB0597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3494821A6E0E900FB0597 /* ViewController.swift */; };
 		E0C3494E21A6E0EA00FB0597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C3494D21A6E0EA00FB0597 /* Assets.xcassets */; };
@@ -27,6 +28,23 @@
 		E0C3496E21A8153F00FB0597 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3496D21A8153F00FB0597 /* AuthenticationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E030C95C21AD880D00670F2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0C3493B21A6E0E900FB0597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0C3494221A6E0E900FB0597;
+			remoteInfo = Drizzzle2;
+		};
+		E030C96A21AD882200670F2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0C3493B21A6E0E900FB0597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0C3494221A6E0E900FB0597;
+			remoteInfo = Drizzzle2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8884B819B01B253C46F37348 /* Pods-Drizzzle2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drizzzle2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drizzzle2/Pods-Drizzzle2.release.xcconfig"; sourceTree = "<group>"; };
 		90A46D24E9394060EBF583C7 /* Pods-Drizzzle2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drizzzle2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drizzzle2/Pods-Drizzzle2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,8 +54,13 @@
 		E030C94521AA957B00670F2B /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E030C94821AA9E9500670F2B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		E030C94A21AA9EAD00670F2B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		E030C94F21AD818E00670F2B /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		E030C95021AD818E00670F2B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		E030C95721AD880D00670F2B /* Drizzzle2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Drizzzle2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E030C95921AD880D00670F2B /* Drizzzle2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drizzzle2Tests.swift; sourceTree = "<group>"; };
+		E030C95B21AD880D00670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E030C96521AD882200670F2B /* Drizzzle2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Drizzzle2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E030C96721AD882200670F2B /* Drizzzle2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drizzzle2UITests.swift; sourceTree = "<group>"; };
+		E030C96921AD882200670F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C3494321A6E0E900FB0597 /* Drizzzle2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drizzzle2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C3494621A6E0E900FB0597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C3494821A6E0E900FB0597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +76,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E030C95421AD880D00670F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E030C96221AD882200670F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0C3494021A6E0E900FB0597 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,16 +130,35 @@
 		E030C94E21AD818E00670F2B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				E030C94F21AD818E00670F2B /* LoginButton.swift */,
 				E030C95021AD818E00670F2B /* AuthenticationViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E030C95821AD880D00670F2B /* Drizzzle2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E030C95921AD880D00670F2B /* Drizzzle2Tests.swift */,
+				E030C95B21AD880D00670F2B /* Info.plist */,
+			);
+			path = Drizzzle2Tests;
+			sourceTree = "<group>";
+		};
+		E030C96621AD882200670F2B /* Drizzzle2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E030C96721AD882200670F2B /* Drizzzle2UITests.swift */,
+				E030C96921AD882200670F2B /* Info.plist */,
+			);
+			path = Drizzzle2UITests;
 			sourceTree = "<group>";
 		};
 		E0C3493A21A6E0E900FB0597 = {
 			isa = PBXGroup;
 			children = (
 				E0C3494521A6E0E900FB0597 /* Drizzzle2 */,
+				E030C95821AD880D00670F2B /* Drizzzle2Tests */,
+				E030C96621AD882200670F2B /* Drizzzle2UITests */,
 				E0C3494421A6E0E900FB0597 /* Products */,
 				E5B3926D3579D74AD7ED7F19 /* Pods */,
 				71D3D1C6310997F972735919 /* Frameworks */,
@@ -113,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				E0C3494321A6E0E900FB0597 /* Drizzzle2.app */,
+				E030C95721AD880D00670F2B /* Drizzzle2Tests.xctest */,
+				E030C96521AD882200670F2B /* Drizzzle2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +233,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E030C95621AD880D00670F2B /* Drizzzle2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E030C95E21AD880D00670F2B /* Build configuration list for PBXNativeTarget "Drizzzle2Tests" */;
+			buildPhases = (
+				E030C95321AD880D00670F2B /* Sources */,
+				E030C95421AD880D00670F2B /* Frameworks */,
+				E030C95521AD880D00670F2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E030C95D21AD880D00670F2B /* PBXTargetDependency */,
+			);
+			name = Drizzzle2Tests;
+			productName = Drizzzle2Tests;
+			productReference = E030C95721AD880D00670F2B /* Drizzzle2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E030C96421AD882200670F2B /* Drizzzle2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E030C96C21AD882200670F2B /* Build configuration list for PBXNativeTarget "Drizzzle2UITests" */;
+			buildPhases = (
+				E030C96121AD882200670F2B /* Sources */,
+				E030C96221AD882200670F2B /* Frameworks */,
+				E030C96321AD882200670F2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E030C96B21AD882200670F2B /* PBXTargetDependency */,
+			);
+			name = Drizzzle2UITests;
+			productName = Drizzzle2UITests;
+			productReference = E030C96521AD882200670F2B /* Drizzzle2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E0C3494221A6E0E900FB0597 /* Drizzzle2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0C3495521A6E0EA00FB0597 /* Build configuration list for PBXNativeTarget "Drizzzle2" */;
@@ -184,6 +278,7 @@
 				E0C3494021A6E0E900FB0597 /* Frameworks */,
 				E0C3494121A6E0E900FB0597 /* Resources */,
 				690B25055785B86B9FF78174 /* [CP] Embed Pods Frameworks */,
+				E030C96F21AE423600670F2B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -204,6 +299,14 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Peng Guo";
 				TargetAttributes = {
+					E030C95621AD880D00670F2B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E0C3494221A6E0E900FB0597;
+					};
+					E030C96421AD882200670F2B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E0C3494221A6E0E900FB0597;
+					};
 					E0C3494221A6E0E900FB0597 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -223,11 +326,27 @@
 			projectRoot = "";
 			targets = (
 				E0C3494221A6E0E900FB0597 /* Drizzzle2 */,
+				E030C95621AD880D00670F2B /* Drizzzle2Tests */,
+				E030C96421AD882200670F2B /* Drizzzle2UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E030C95521AD880D00670F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E030C96321AD882200670F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0C3494121A6E0E900FB0597 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,9 +415,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E030C96F21AE423600670F2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E030C95321AD880D00670F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E030C95A21AD880D00670F2B /* Drizzzle2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E030C96121AD882200670F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E030C96821AD882200670F2B /* Drizzzle2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0C3493F21A6E0E900FB0597 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +465,6 @@
 				E030C95221AD818E00670F2B /* AuthenticationViewController.swift in Sources */,
 				E0C3494921A6E0E900FB0597 /* ViewController.swift in Sources */,
 				E0C3496121A7A36000FB0597 /* Extension.swift in Sources */,
-				E030C95121AD818E00670F2B /* LoginButton.swift in Sources */,
 				E030C94B21AA9EAD00670F2B /* ViewModel.swift in Sources */,
 				E030C94921AA9E9500670F2B /* AuthenticationViewModel.swift in Sources */,
 				E0C3496A21A7FCEA00FB0597 /* AppCoordinator.swift in Sources */,
@@ -322,6 +473,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E030C95D21AD880D00670F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0C3494221A6E0E900FB0597 /* Drizzzle2 */;
+			targetProxy = E030C95C21AD880D00670F2B /* PBXContainerItemProxy */;
+		};
+		E030C96B21AD882200670F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0C3494221A6E0E900FB0597 /* Drizzzle2 */;
+			targetProxy = E030C96A21AD882200670F2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E0C3494F21A6E0EA00FB0597 /* LaunchScreen.storyboard */ = {
@@ -335,6 +499,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E030C95F21AD880D00670F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K8UAH3FUM;
+				INFOPLIST_FILE = Drizzzle2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.pengguo.Drizzzle2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drizzzle2.app/Drizzzle2";
+			};
+			name = Debug;
+		};
+		E030C96021AD880D00670F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K8UAH3FUM;
+				INFOPLIST_FILE = Drizzzle2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.pengguo.Drizzzle2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drizzzle2.app/Drizzzle2";
+			};
+			name = Release;
+		};
+		E030C96D21AD882200670F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K8UAH3FUM;
+				INFOPLIST_FILE = Drizzzle2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.pengguo.Drizzzle2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drizzzle2;
+			};
+			name = Debug;
+		};
+		E030C96E21AD882200670F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5K8UAH3FUM;
+				INFOPLIST_FILE = Drizzzle2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.pengguo.Drizzzle2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drizzzle2;
+			};
+			name = Release;
+		};
 		E0C3495321A6E0EA00FB0597 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +734,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E030C95E21AD880D00670F2B /* Build configuration list for PBXNativeTarget "Drizzzle2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E030C95F21AD880D00670F2B /* Debug */,
+				E030C96021AD880D00670F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E030C96C21AD882200670F2B /* Build configuration list for PBXNativeTarget "Drizzzle2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E030C96D21AD882200670F2B /* Debug */,
+				E030C96E21AD882200670F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E0C3493E21A6E0E900FB0597 /* Build configuration list for PBXProject "Drizzzle2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

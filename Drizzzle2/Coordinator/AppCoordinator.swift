@@ -10,19 +10,19 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     let window: UIWindow?
-    
+
     var authenticationCoordinator: AuthenticationCoordinator?
     var tabBarCoordinator: TabBarCoordinator?
-    
+
     var isAuthenticated: Bool = {
         let isAuthenticated = UserDefaults.standard.bool(forKey: Constants.Autentication.AutenticationStatusKey)
         return isAuthenticated
     }()
-    
+
     init(window: UIWindow?) {
         self.window = window
     }
-    
+
     func start() {
         if (isAuthenticated) {
             showContent()
@@ -30,7 +30,7 @@ class AppCoordinator: Coordinator {
             showAuthentication()
         }
     }
-    
+
     func showContent() {
         guard let window = window else {
             return
@@ -39,25 +39,27 @@ class AppCoordinator: Coordinator {
         let tabbarController = UITabBarController()
         window.switchRootViewController(to: tabbarController)
         window.makeKeyAndVisible()
-        
+
         tabBarCoordinator = TabBarCoordinator(with: tabbarController)
+        // swiftlint:disable:next force_unwrapping
         tabBarCoordinator!.start()
     }
-    
+
     func showAuthentication() {
         guard let window = window else {
             return
         }
-        
+
         let navigationController = UINavigationController()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        
+
         authenticationCoordinator = AuthenticationCoordinator(with: navigationController)
+        // swiftlint:disable:next force_unwrapping
         authenticationCoordinator!.delegate = self
         authenticationCoordinator!.start()
+        // swiftlint:disable:previous force_unwrapping
     }
-    
 }
 
 extension AppCoordinator: AuthenticationCoordinatorDelegate {

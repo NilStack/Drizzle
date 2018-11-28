@@ -15,7 +15,7 @@ extension UIImage {
         rect.origin.y*=self.scale
         rect.size.width*=self.scale
         rect.size.height*=self.scale
-        
+
         let imageRef = self.cgImage!.cropping(to: rect)
         let image = UIImage(cgImage: imageRef!, scale: self.scale, orientation: self.imageOrientation)
         return image
@@ -23,7 +23,6 @@ extension UIImage {
 }
 
 public extension UIWindow {
-    
     /// Switch current root view controller with a new view controller.
     ///
     /// - Parameters:
@@ -33,12 +32,11 @@ public extension UIWindow {
     ///   - options: animataion options _(default is .transitionFlipFromRight)_.
     ///   - completion: optional completion handler called when view controller is changed.
     public func switchRootViewController(to viewController: UIViewController, animated: Bool = true, duration: TimeInterval = 0.5, options: UIView.AnimationOptions = .transitionFlipFromRight, _ completion: (() -> Void)? = nil) {
-        
         guard animated else {
             rootViewController = viewController
             return
         }
-        
+
         UIView.transition(with: self, duration: duration, options: options, animations: {
             let oldState = UIView.areAnimationsEnabled
             UIView.setAnimationsEnabled(false)
@@ -48,5 +46,4 @@ public extension UIWindow {
             completion?()
         })
     }
-    
 }

@@ -20,8 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appCoordinator.start()
         return true
     }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+
+    func application(_ app: UIApplication,
+                  open url: URL,
+                   options:[UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         if url.scheme == "drizzzle" {
             NotificationCenter.default.post(name: NSNotification.Name(Constants.Notification.DidRedirectNotification), object: nil, userInfo: ["RedirectURL": url])
             return true
@@ -30,4 +32,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-

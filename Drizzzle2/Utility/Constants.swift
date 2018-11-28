@@ -13,7 +13,7 @@ struct Constants {
         static let DidRedirectNotification = "xyz.pengguo.Dirzzzle.notification.didRedirect"
         static let DidAuthenticateNotification = "xyz.pengguo.Dirzzzle.notification.didAuthenticate"
     }
-    
+
     struct Autentication {
         static let AutenticationStatusKey = "xyz.pengguo.Dirzzzle.Authentication.Status"
     }
@@ -28,16 +28,16 @@ struct Constants {
             static let LocationLabelHeight = 30.0
             static let BioLabelHeight = 60.0
         }
-        
+
     }
-    
+
     struct MainViewController {
         struct Layout {
             static let TabbarItemImageWidth = 25.0
             static let TabbarItemImageHeight = 25.0
         }
     }
-    
+
     struct ShotsViewController {
         struct ShotCardView {
             //static let ShotImageWidth = 120.0

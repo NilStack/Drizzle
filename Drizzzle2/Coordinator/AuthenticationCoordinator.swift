@@ -14,10 +14,10 @@ protocol AuthenticationCoordinatorDelegate: class {
 
 class AuthenticationCoordinator: Coordinator {
     let authViewModel: AuthenticationViewModel
-    
+
     let navigationController: UINavigationController
     let authenticationViewController: AuthenticationViewController
-    
+
     weak var delegate: AuthenticationCoordinatorDelegate?
 
     init(with navigationController: UINavigationController) {
@@ -27,7 +27,7 @@ class AuthenticationCoordinator: Coordinator {
         self.authenticationViewController = AuthenticationViewController(viewModel: authViewModel)
         self.authViewModel.delegate = self
     }
-    
+
     func start() {
         navigationController
             .pushViewController(authenticationViewController, animated: true)
@@ -43,6 +43,4 @@ extension AuthenticationCoordinator: AuthenticationViewModelDelegate {
             print(error)
         }
     }
-    
-    
 }

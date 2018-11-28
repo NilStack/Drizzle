@@ -9,7 +9,6 @@
 import UIKit
 
 class TabBarCoordinator: Coordinator {
-    
     init(with tabBarController: UITabBarController) {
     }
 
