@@ -37,7 +37,7 @@ class AuthenticationCoordinator: Coordinator {
 
 extension AuthenticationCoordinator: AuthenticationViewModelDelegate {
     func authenticationViewModel(_ viewModel: AuthenticationViewModel, didAuthenticate: Bool, error: Error?) {
-        if (didAuthenticate) {
+        if didAuthenticate {
             self.delegate?.didAuthenticate(self)
         } else if let error = error {
             print(error)

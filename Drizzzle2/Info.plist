@@ -23,7 +23,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>gitgit</string>
+				<string>drizzle</string>
 			</array>
 		</dict>
 	</array>

@@ -8,6 +8,13 @@
 
 import UIKit
 
+public enum Response<T> {
+    
+    case success(T)
+    
+    case failure(Error)
+}
+
 protocol Service {
 
 }

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication,
                   open url: URL,
                    options:[UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if url.scheme == "gitgit" {
+        if url.scheme == "drizzle" {
             NotificationCenter.default.post(name: NSNotification.Name(Constants.Notification.DidRedirectNotification), object: nil, userInfo: ["RedirectURL": url])
             return true
         }

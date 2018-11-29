@@ -28,7 +28,7 @@ class AuthenticationService: Service {
         "authorize_uri": "https://github.com/login/oauth/authorize",
         "token_uri": "https://github.com/login/oauth/access_token",
         "scope": "user repo notifications",
-        "redirect_uris": ["gitgit://oauth/callback"],
+        "redirect_uris": ["drizzle://oauth/callback"],
         "secret_in_body": true, // GitHub does not accept client secret in the Authorization header
         "verbose": true,
         "keychain": false
