@@ -32,6 +32,8 @@
 		E0C3496821A7FCA900FB0597 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3496721A7FCA900FB0597 /* Coordinator.swift */; };
 		E0C3496A21A7FCEA00FB0597 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3496921A7FCEA00FB0597 /* AppCoordinator.swift */; };
 		E0C3496E21A8153F00FB0597 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C3496D21A8153F00FB0597 /* AuthenticationCoordinator.swift */; };
+		E0C7504B21E09AAA00865D91 /* StarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C7504A21E09AAA00865D91 /* StarsViewModel.swift */; };
+		E0D24A2521CCD21300A3D4E6 /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D24A2421CCD21300A3D4E6 /* UserHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		E0C3496721A7FCA900FB0597 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E0C3496921A7FCEA00FB0597 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E0C3496D21A8153F00FB0597 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		E0C7504A21E09AAA00865D91 /* StarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewModel.swift; sourceTree = "<group>"; };
+		E0D24A2421CCD21300A3D4E6 /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				E030C94A21AA9EAD00670F2B /* ViewModel.swift */,
 				E030C94821AA9E9500670F2B /* AuthenticationViewModel.swift */,
 				E030C97921B01ABB00670F2B /* UserViewModel.swift */,
+				E0C7504A21E09AAA00865D91 /* StarsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E030C97C21B01B4000670F2B /* UserViewController.swift */,
+				E0D24A2421CCD21300A3D4E6 /* UserHeaderView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 		E0C3494521A6E0E900FB0597 /* Drizzzle2 */ = {
 			isa = PBXGroup;
 			children = (
+				E0C7504921E09A3500865D91 /* Stars */,
 				E030C97021AEBAC300670F2B /* GitHubClient */,
 				E030C94E21AD818E00670F2B /* Authentication */,
 				E030C97B21B01B1800670F2B /* User */,
@@ -253,6 +260,13 @@
 				E030C94521AA957B00670F2B /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E0C7504921E09A3500865D91 /* Stars */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stars;
 			sourceTree = "<group>";
 		};
 		E5B3926D3579D74AD7ED7F19 /* Pods */ = {
@@ -403,6 +417,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Drizzzle2/Pods-Drizzzle2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -411,6 +426,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
@@ -420,6 +436,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -428,6 +445,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
@@ -505,7 +523,9 @@
 				E030C97821AF8C1200670F2B /* UserService.swift in Sources */,
 				E0C3496521A7A3C200FB0597 /* AccessToken.swift in Sources */,
 				E0C3496021A7A36000FB0597 /* Constants.swift in Sources */,
+				E0C7504B21E09AAA00865D91 /* StarsViewModel.swift in Sources */,
 				E030C97421AEBB6700670F2B /* AuthenticationPlugin.swift in Sources */,
+				E0D24A2521CCD21300A3D4E6 /* UserHeaderView.swift in Sources */,
 				E0C3496E21A8153F00FB0597 /* AuthenticationCoordinator.swift in Sources */,
 				E030C94421AA8C0100670F2B /* Service.swift in Sources */,
 				E030C97621AECBFC00670F2B /* User.swift in Sources */,

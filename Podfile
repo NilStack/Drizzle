@@ -6,9 +6,11 @@ target 'Drizzzle2' do
   pod 'p2.OAuth2', :git => 'https://github.com/p2/OAuth2', :submodules => true
   pod 'SnapKit', '~> 4.0.0'
   pod 'RealmSwift'
+  pod 'RxRealm'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'Moya'
   pod 'Moya-ObjectMapper'
+  pod 'Kingfisher', '~> 5.0'
 
 end

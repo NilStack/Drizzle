@@ -10,7 +10,7 @@ import RealmSwift
 import ObjectMapper
 
 class User: Object, Mappable {
-    @objc dynamic var authenticated = false
+    //@objc dynamic var authenticated = false
     @objc dynamic var login: String?
     @objc dynamic var id = -1
     @objc dynamic var avatarURL: String?
@@ -57,4 +57,8 @@ class User: Object, Mappable {
         return "id"
     }
 
+}
+
+extension User {
+    
 }

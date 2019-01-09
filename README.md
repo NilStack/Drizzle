@@ -1,2 +1,2 @@
 # Drizzzle
-Not just another iOS client for Dribbble.
+Not just another iOS client for GitHub.

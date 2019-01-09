@@ -8,10 +8,8 @@
 
 import UIKit
 
-public enum Response<T> {
-    
+public enum Result<T> {
     case success(T)
-    
     case failure(Error)
 }
 

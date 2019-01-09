@@ -9,6 +9,9 @@
 import UIKit
 
 struct Constants {
+    struct UserInfo {
+        static let AuthenticatedUserIDKey = "AuthenticatedUserIDKey"
+    }
     struct Notification {
         static let DidRedirectNotification = "xyz.pengguo.Dirzzzle.notification.didRedirect"
         static let DidAuthenticateNotification = "xyz.pengguo.Dirzzzle.notification.didAuthenticate"
